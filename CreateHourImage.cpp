@@ -276,8 +276,8 @@ int main()
 	}
 
 	//write in char array
-	if (curTimeEST < 9) buf_est[0] = '0';
-	else if (curTimeEST < 19) buf_est[0] = '1';
+	if (curTimeEST <= 9) buf_est[0] = '0';
+	else if (curTimeEST <= 19) buf_est[0] = '1';
 	else buf_est[0] = '2';
 	buf_est[1] = '0' + (curTimeEST % 10);
 
@@ -298,8 +298,8 @@ int main()
 	}
 	
 	//write in char array
-	if (curTimePST < 9) buf_pst[0] = '0';
-	else if (curTimePST < 19) buf_pst[0] = '1';
+	if (curTimePST <= 9) buf_pst[0] = '0';
+	else if (curTimePST <= 19) buf_pst[0] = '1';
 	else buf_pst[0] = '2';
 	buf_pst[1] = '0' + (curTimePST % 10);
 
